@@ -1,0 +1,25 @@
+.login{
+    display: grid;
+    place-items: center;
+    height: calc(100vh - 80px); /* Adjust the height as needed */
+    margin-bottom: 200px;
+}
+.login > img{
+    width: auto;
+    height: 200px;
+}
+.login > button{
+    background-color: #1DB954;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: black;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+    cursor:pointer;
+    
+}
+
+    .login > button:hover {
+        transform: translateY(-10px); /* Raise the button by 5 pixels on hover */
+    }
