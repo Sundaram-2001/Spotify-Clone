@@ -8,18 +8,22 @@
     width: auto;
     height: 200px;
 }
-.login > button{
-    background-color: #1DB954;
-    font-size: 20px;
+.login > a{
     padding: 10px;
+    font-size: 20px;
+    /*font-family: Arial, sans-serif;*/
+    /*background: #F00;*/
+    /*display: inline-block;*/
+    background: linear-gradient(to right, #1DB954 0%, #1DB954 50%, #ffffff 50%, #ffffff 100%);
     border-radius: 20px;
-    border-color: black;
     font-weight: bold;
-    transition: transform 0.2s ease;
-    cursor:pointer;
-    
+    cursor: pointer;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.3s;
 }
 
-    .login > button:hover {
-        transform: translateY(-10px); /* Raise the button by 5 pixels on hover */
+    .login > a:hover {
+        transform: translateY(-10px);    /* Raise the button by 5 pixels on hover */
+        background-position:0 0;
     }
