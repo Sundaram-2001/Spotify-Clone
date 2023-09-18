@@ -1,0 +1,21 @@
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+   margin-left: 0;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+}
+
+
+    .nav-item {
+        margin: 0;
+        padding: 0;
+      }
+
