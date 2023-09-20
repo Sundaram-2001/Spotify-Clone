@@ -1,0 +1,22 @@
+.home-comp{
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 18px;
+    
+}
+.home-anchor{
+    text-decoration: none !important;
+}
+
+.search-comp{
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 18px;
+}
+.first-container{
+    /*background-color: 	#111111;*/
+    border-radius: 20px;
+    padding: 10px;
+    width: 20%;
+}
+.first-container:hover{
+    background-color: 	#111111;
+}
