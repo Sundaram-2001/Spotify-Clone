@@ -20,3 +20,51 @@
 .first-container:hover{
     background-color: 	#111111;
 }
+.home-comp a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+     /* Set the initial background color to white */
+}
+.home-comp a:hover {
+    background-color: #222222; /* Grey background color on hover */
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search-comp a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+     /* Set the initial background color to white */
+}
+.search-comp a:hover {
+    background-color: #222222; /* Grey background color on hover */
+    border-radius: 20px;
+    padding: 10px;
+}
+.library{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.second-container{
+    /*background-color: 	#111111;*/
+    border-radius: 20px;
+    padding: 10px;
+    width: 20%;
+}
+
+.second-container:hover{
+    background-color: 	#111111;
+}
+.library{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
