@@ -16,10 +16,11 @@
     border-radius: 20px;
     padding: 10px;
     width: 20%;
+    background-color: #111111;
 }
-.first-container:hover{
+/*.first-container:hover{
     background-color: 	#111111;
-}
+}*/
 .home-comp a {
     text-decoration: none;
     color: white;
@@ -27,12 +28,15 @@
     padding: 10px;
     border-radius: 10px;
     transition: background-color 0.3s ease;
+
      /* Set the initial background color to white */
 }
 .home-comp a:hover {
     background-color: #222222; /* Grey background color on hover */
     border-radius: 20px;
     padding: 10px;
+    box-shadow: 0px 0px 20px #1DB954; 
+    border-color: #1DB954;
 }
 
 .search-comp a {
@@ -48,9 +52,11 @@
     background-color: #222222; /* Grey background color on hover */
     border-radius: 20px;
     padding: 10px;
+    box-shadow: 0px 0px 20px #1DB954; 
+    border-color: #1DB954;
 }
 .library{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .second-container{
@@ -58,6 +64,7 @@
     border-radius: 20px;
     padding: 10px;
     width: 20%;
+    background-color: #111111;
 }
 
 .second-container:hover{
@@ -73,17 +80,97 @@
     transition: background-color 0.3s ease;
     padding: 10px;
 }
+
 .library > .library-link:hover{
     background-color: #222222;
     border-radius: 20px;
+    box-shadow: 0px 0px 20px #1DB954; 
+    border-color: #1DB954;
 }
-.library > .plus-link{
-    border-radius: 20px;
+.plus-icon{
+    border-radius: 70px;
+    /*background-color: 	#222222;*/
     transition: background-color 0.3s ease;
     
 }
-.library > .plus-link:hover{
+.plus-icon:hover{
+    border-radius: 70px;
     background-color: #222222;
-    border-radius: 20px;
 }
-
+.playlist-button{
+    border-radius: 20px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    background-color: #111111;
+    color: white;
+    transition: background-color 0.5s ease;
+    box-shadow: 0px 0px 10px transparent;
+}
+.playlist-button:hover{
+    border-radius: 30px;
+    background-color: #1DB954;
+    /*background-color: #444444;*/
+    border-color: #111111;
+    color: black;
+    box-shadow: 0px 0px 20px #1DB954; 
+    border-color: #1DB954;
+}
+.album-button{
+    border-radius: 20px;
+    font-family: "Helvatica","Arial","sans-serif";
+    color:white;
+    background-color: #111111;
+    transition: background-color 0.5s ease;
+}
+.album-button:hover{
+    background-color: #1DB954;
+    border-radius: 20px;
+    color: black;
+    border-color: black;
+    box-shadow: 0px 0px 20px #1DB954; 
+    border-color: #1DB954;
+}
+.artist-button{
+    border-radius: 20px;
+    background-color: #111111;
+    color: white;
+    font-family: "Helvatica","Arial","sans-serif";
+    transition: background-color 0.5s ease;
+}
+.artist-button:hover{
+    background-color: #1DB954;
+    color: black;
+    box-shadow: 0px 0px 20px #1DB954; 
+    border-color: #1DB954;
+}
+.search-button{
+    border-radius: 20px;
+    background-color: #111111;
+    color: white;
+    font-family: "Helvatica","Arial", "sans-serif";
+    transition: background-color 0.5s ease;
+}
+.search-button:hover{
+    background-color: #1DB954;
+    color:black;
+    border-color: #1DB954;
+    box-shadow: 0px 0px 20px #1DB954; 
+}
+.recently-played{
+    font-family: "Helvatica","Arial","sans-serif";
+    color: white;
+    margin-left: 140px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 5px transparent;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    font-size: 18px;
+}
+.recently-played:hover{
+    color: #1DB954;
+    box-shadow: 0px 2px 5px rgba(29, 185, 84, 0.5);
+    transform: translate(0px, -1px);
+}
+.test-button{
+    width: 300px;
+    height: 70px;
+}
