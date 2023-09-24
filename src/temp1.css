@@ -170,7 +170,37 @@
     box-shadow: 0px 2px 5px rgba(29, 185, 84, 0.5);
     transform: translate(0px, -1px);
 }
-.test-button{
+.song-button{
+    height: 50px;
     width: 300px;
-    height: 70px;
+    cursor: pointer;
+    border: none;
+    
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    padding: 0;
+}
+.button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+.top-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.heart-icon {
+    height: 100%;
+    max-width: 100%;
+    margin-right: 10px; /* Adjust this margin as needed for spacing */
+    height: 50px;
+}
+.liked-songs{
+    margin-top: 5px;
+    font-family: "Helvatica","Arial","sans-serif";
 }

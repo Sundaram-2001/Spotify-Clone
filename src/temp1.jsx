@@ -1,7 +1,7 @@
 import React from "react"
 // import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faBars, faHeart, faHouse, faIcons, faPlus, faPlusCircle, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faBars, faHeart, faHouse, faIcons, faPlus, faPlusCircle, faSearch, faThumbTack } from '@fortawesome/free-solid-svg-icons';
 import './temp1.css'
 import { faNapster } from "@fortawesome/free-brands-svg-icons";
 export default function temp(){
@@ -80,8 +80,14 @@ export default function temp(){
                     Recents 
                     &nbsp;<FontAwesomeIcon icon={faBars} />
                 </a>
-                <button  style={{"marginTop":"40px","padding":"0px"}} className="test-button">
-                    <FontAwesomeIcon icon={faHeart}/>
+                
+                <button style={{"marginTop":"40px"}} className="song-button">
+                    <div className="button-content">
+                        <div className="top-content">
+                            <FontAwesomeIcon icon={faHeart} className="heart-icon"/>
+                            <h5 className="liked-songs">Liked Songs</h5>
+                        </div>
+                    </div>
                 </button>
             </div>
         
