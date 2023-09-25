@@ -80,23 +80,29 @@ export default function temp(){
                     Recents 
                     &nbsp;<FontAwesomeIcon icon={faBars} />
                 </a>
-                <button
+                <button className="liked-songs"
       style={{
         width: 300,
         height: 50,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        backgroundColor: '#1DB954',
+        "marginTop":40,
         borderRadius: 5,
         position: 'relative'
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <FontAwesomeIcon icon={faHeart} size="lg" style={{ color: '#fff', height: '100%', position: 'absolute' }} />
-        <h5 style={{ color: '#fff', margin: 0, marginLeft: 5, marginTop: -5 }}>Liked Songs</h5>
+        <FontAwesomeIcon icon={faHeart} size="lg" style={{ "color": "violet", height: '100%', position: 'absolute' }} />
+        <h5 style={{ color: '#fff', margin: 0, marginLeft: 55, marginTop: -30 }}>Liked Songs</h5>
       </div>
-      <FontAwesomeIcon icon={faThumbTack} size="sm" style={{ color: '#fff', marginBottom: 0, marginLeft: -10, position: 'absolute', bottom: 0 }} />
+      <div style={{ position: 'absolute', marginBottom: 5 }}>
+    <FontAwesomeIcon className="pin-icon" icon={faThumbTack} size="sm" style={{ "color":"#1DB954", 
+    position: 'absolute', bottom: 25, left: 50 }} />
+    <span><h6 style={{"color":"white", marginLeft: 70,marginTop: 50}}>271 songs</h6></span>
+  </div>
+      {/*<FontAwesomeIcon className="pin-icon" icon={faThumbTack} size="sm" style={{ "color":"#1DB954" , marginBottom: 5, marginLeft: 50, position: 'absolute', bottom: 0 }} />
+      <span><h5 style={{"color":"white","marginTop":50}}>271 songs</h5></span>*/}
     </button>
 
 

@@ -174,18 +174,10 @@
     height: 50px;
     width: 300px;
     cursor: pointer;
-    border: none;
     
-    cursor: pointer;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: relative;
-    padding: 0;
+    
+    
 }
-/* .liked-songs{ */
-    /* height: 50px; */
-    /* width:300px; */
-    /* margin-top: 40px; */
-
+.liked-songs{
+    background-color: #111111;
 }
