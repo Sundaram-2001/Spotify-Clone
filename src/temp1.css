@@ -183,24 +183,9 @@
     position: relative;
     padding: 0;
 }
-.button-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 100%;
-}
-.top-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.heart-icon {
-    height: 100%;
-    max-width: 100%;
-    margin-right: 10px; /* Adjust this margin as needed for spacing */
-    height: 50px;
-}
-.liked-songs{
-    margin-top: 5px;
-    font-family: "Helvatica","Arial","sans-serif";
+/* .liked-songs{ */
+    /* height: 50px; */
+    /* width:300px; */
+    /* margin-top: 40px; */
+
 }
