@@ -180,4 +180,9 @@
 }
 .liked-songs{
     background-color: #111111;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.liked-songs:hover{
+    background-color: #222222;
 }

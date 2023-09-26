@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faBars, faHeart, faHouse, faIcons, faPlus, faPlusCircle, faSearch, faThumbTack } from '@fortawesome/free-solid-svg-icons';
 import './temp1.css'
 import { faNapster } from "@fortawesome/free-brands-svg-icons";
+
+
 export default function temp(){
     // const [isHovered,setIsHovered]=useState(false);
     // const handleMouseEnter=()=>{
@@ -87,23 +89,45 @@ export default function temp(){
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        "marginTop":40,
+        "marginTop":20,
         borderRadius: 5,
         position: 'relative'
-      }}
+    }}
     >
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
         <FontAwesomeIcon icon={faHeart} size="lg" style={{ "color": "violet", height: '100%', position: 'absolute' }} />
         <h5 style={{ color: '#fff', margin: 0, marginLeft: 55, marginTop: -30 }}>Liked Songs</h5>
-      </div>
-      <div style={{ position: 'absolute', marginBottom: 5 }}>
+        </div>
+        <div style={{ position: 'absolute', marginBottom: 5 }}>
     <FontAwesomeIcon className="pin-icon" icon={faThumbTack} size="sm" style={{ "color":"#1DB954", 
     position: 'absolute', bottom: 25, left: 50 }} />
     <span><h6 style={{"color":"white", marginLeft: 70,marginTop: 50}}>271 songs</h6></span>
-  </div>
-      {/*<FontAwesomeIcon className="pin-icon" icon={faThumbTack} size="sm" style={{ "color":"#1DB954" , marginBottom: 5, marginLeft: 50, position: 'absolute', bottom: 0 }} />
-      <span><h5 style={{"color":"white","marginTop":50}}>271 songs</h5></span>*/}
-    </button>
+    </div>
+</button>
+<button className="liked-songs"
+      style={{
+        width: 300,
+        height: 50,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        "marginTop":20,
+        borderRadius: 5,
+        position: 'relative'
+    }}
+    >
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+        {<FontAwesomeIcon icon={faHeart} size="lg" style={{ "color": "violet", height: '100%', position: 'absolute' }} />}
+        
+        <h5 style={{ color: '#fff', margin: 0, marginLeft: 55, marginTop: -30 }}>Liked Songs</h5>
+        </div>
+        <div style={{ position: 'absolute', marginBottom: 5 }}>
+    <FontAwesomeIcon className="pin-icon" icon={faThumbTack} size="sm" style={{ "color":"#1DB954", 
+    position: 'absolute', bottom: 25, left: 50 }} />
+    <span><h6 style={{"color":"white", marginLeft: 70,marginTop: 50}}>271 songs</h6></span>
+    </div>
+</button>
+
 
 
             </div>
