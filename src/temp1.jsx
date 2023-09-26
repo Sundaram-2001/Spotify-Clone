@@ -1,7 +1,7 @@
 import React from "react"
 // import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faBars, faHeart, faHouse, faIcons, faPlus, faPlusCircle, faSearch, faThumbTack } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faBars, faCrown, faHeadphones, faHeart, faHouse, faIcons, faMusic, faPeace, faPlus, faPlusCircle, faRankingStar, faSearch, faThumbTack } from '@fortawesome/free-solid-svg-icons';
 import './temp1.css'
 import { faNapster } from "@fortawesome/free-brands-svg-icons";
 
@@ -14,6 +14,9 @@ export default function temp(){
     // const handleMouseLeave=()=>{
     //     setIsHovered(false);
     // }
+    const handleClick=()=>{
+        alert("Kindly Log-In to Stream ad-free music!")
+    }
     return(
         <>
         <div className="first-container" style={{"color": "white"}}
@@ -83,6 +86,7 @@ export default function temp(){
                     &nbsp;<FontAwesomeIcon icon={faBars} />
                 </a>
                 <button className="liked-songs"
+                onClick={handleClick}
       style={{
         width: 300,
         height: 50,
@@ -105,6 +109,7 @@ export default function temp(){
     </div>
 </button>
 <button className="liked-songs"
+onClick={handleClick}
       style={{
         width: 300,
         height: 50,
@@ -117,21 +122,59 @@ export default function temp(){
     }}
     >
         <div style={{ display: 'flex', alignItems: 'center' }}>
-        {<FontAwesomeIcon icon={faHeart} size="lg" style={{ "color": "violet", height: '100%', position: 'absolute' }} />}
+        {<FontAwesomeIcon icon={faMusic} size="lg" style={{"color":"white", height: '100%', position: 'absolute' }} />}
         
-        <h5 style={{ color: '#fff', margin: 0, marginLeft: 55, marginTop: -30 }}>Liked Songs</h5>
+        <h5 style={{ color: '#fff', margin: 0, marginLeft: 55, marginTop: -30 }}>Honey Singh</h5>
         </div>
         <div style={{ position: 'absolute', marginBottom: 5 }}>
-    <FontAwesomeIcon className="pin-icon" icon={faThumbTack} size="sm" style={{ "color":"#1DB954", 
-    position: 'absolute', bottom: 25, left: 50 }} />
-    <span><h6 style={{"color":"white", marginLeft: 70,marginTop: 50}}>271 songs</h6></span>
+        <span><h6 style={{"color":"white", marginLeft: 50,marginTop: 60}}>pranshu</h6></span>
     </div>
 </button>
-
-
-
-            </div>
+<button className="liked-songs"
+onClick={handleClick}
+      style={{
+        width: 300,
+        height: 50,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        "marginTop":20,
+        borderRadius: 5,
+        position: 'relative'
+    }}
+    >
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+        {<FontAwesomeIcon icon={faHeadphones} size="lg" style={{"color":"white", height: '100%', position: 'absolute' }} />}
         
-        </>
+        <h5 style={{ color: '#fff', margin: 0, marginLeft: 55, marginTop: -30 }}>That Music Project</h5>
+        </div>
+        <div style={{ position: 'absolute', marginBottom: 5 }}>
+        <span><h6 style={{"color":"white", marginLeft: 50,marginTop: 60}}>That Music Project</h6></span>
+    </div>
+</button>
+<button className="liked-songs"
+    onClick={handleClick}
+      style={{
+        width: 300,
+        height: 50,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        "marginTop":20,
+        borderRadius: 5,
+        position: 'relative'
+    }}
+    >
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+        {<FontAwesomeIcon icon={faCrown} size="lg" style={{"color":"white", height: '100%', position: 'absolute' }} />}
+        
+        <h5 style={{ color: '#fff', margin: 0, marginLeft: 55, marginTop: -30 }}>Taylor Swift</h5>
+        </div>
+        <div style={{ position: 'absolute', marginBottom: 5 }}>
+        <span><h6 style={{"color":"white", marginLeft: 50,marginTop: 60}}>Spotify</h6></span>
+    </div>
+</button>
+</div>
+</>
     )
 }
