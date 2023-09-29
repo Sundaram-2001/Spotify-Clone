@@ -6,6 +6,7 @@ import {
   faArrowRight,
   faBars,
   faCrown,
+  faForwardStep,
   faHeadphones,
   faHeart,
   faHouse,
@@ -309,12 +310,12 @@ const openModal=()=>{
           </div>
         </button>
       </div>
-      <div style={{"color":"white","backgroundColor":"#222222","width":"100%","position":"fixed","bottom":0
-      "height":"100px"
-    }}>
-        hello
+      <div className="player">
+      <button>
+        <FontAwesomeIcon icon={faPlay} />
+      </button>
       </div>
-
+              
     </>
   );
 }
