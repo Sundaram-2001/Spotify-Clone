@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     left: 0;
-    background-color: pink;
+    background-color: black;
     bottom: 0;
     position: fixed;
 }
@@ -14,8 +14,8 @@
     border-radius: 15px;
     justify-content: center;
     align-items: center;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
     bottom: 22px;
     position: absolute;
     left: calc(50% + 14px); /* Center horizontally */
@@ -24,6 +24,8 @@
 }
 .next-button {
     border-radius: 15px;
+    background-color: black;
+    color: white;
     position: absolute;
     bottom: 22px; /* Adjusted the bottom value */
     left: calc(50% + 50px); /* Adjusted the left value for spacing */
@@ -32,18 +34,66 @@
 .prev-button {
     border-radius: 15px;
     position: absolute;
+    background-color: black;
+    color: white;
     bottom: 22px; /* Adjusted the bottom value */
     left: calc(50% - 50px); /* Adjusted the left value for spacing */
 }
 .shuffle-button{
     margin-right: 175px;
     border-radius: 15px;
-    bottom: 20px;
+    bottom: 23px;
     position: inherit;
+    background-color: black;
 }
 .repeat-button{
     margin-left: 220px;
     border-radius: 15px;
-    bottom: 20px;
+    bottom: 22px;
     position: inherit;
+    color:black;
+    background-color: black;
 }
+.repeat-icon{
+    color: white;
+}
+.repeat-icon.clicked{
+    color:#1DB954
+}
+.shuffle-icon{
+    color: white;
+}
+.shuffle-icon.shuffled{
+    color: #1DB954;
+}
+.like-song{
+    position: absolute;
+    margin-bottom: 19px;
+    left: 250px;
+    border-radius: 15px;
+    background-color: black;
+    background: none;
+    border: none;
+}
+.like-icon{
+    color: white;
+    border: 2px solid black;
+    size: medium;
+}
+.like-icon.liked{
+    color: #1DB954;
+    animation: splash 0.5s ease;
+}
+@keyframes splash {
+    0% {
+      transform: scale(1); /* Initial scale */
+      opacity: 0.8; /* Initial opacity */
+    }
+    100% {
+      transform: scale(1.2); /* Scale up by 20% */
+      opacity: 0; /* Fade out completely */
+    }
+}
+
+
+  
