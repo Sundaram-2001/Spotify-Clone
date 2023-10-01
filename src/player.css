@@ -18,9 +18,11 @@
     background-color: black;
     bottom: 22px;
     position: absolute;
-    left: calc(50% + 14px); /* Center horizontally */
-  transform: translateX(-50%);
-/* Center horizontally */
+    left: calc(50% + 14px); 
+    transform: translateX(-50%);
+}
+.play-button:focus{
+    border: none;
 }
 .next-button {
     border-radius: 15px;
@@ -94,6 +96,25 @@
       opacity: 0; /* Fade out completely */
     }
 }
-
-
-  
+.song-info{
+    position: relative;
+    left: -680px;
+}
+.song-name {
+    position: relative;
+    left: 20px;
+    color: white;
+    bottom: 2px; 
+    font-family: "Helvetica","arial",sans-serif;
+    font-size: smaller;
+}
+.artist-name {
+    position: absolute;
+    bottom: 0; 
+    left: 15px; 
+    margin-top: 5px;
+    color: grey;
+    white-space: nowrap; 
+    font-family: "Helvetica","arial",sans-serif;
+    font-size: x-small;
+}

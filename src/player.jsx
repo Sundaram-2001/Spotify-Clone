@@ -2,7 +2,8 @@ import React from 'react'
 import './player.css'
 import {    useState } from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBackwardStep, faForwardStep, faPlay, faShuffle, faRepeat, faHeart, faHeartPulse } from '@fortawesome/free-solid-svg-icons';
+// import {Song} from './song.png'
+import { faBackwardStep, faForwardStep, faPlay, faShuffle, faRepeat, faHeart, faHeartPulse, faPause } from '@fortawesome/free-solid-svg-icons';
 export default function player(){
 const [isClicked,setIsClicked]=useState(false);
 const changeColor=()=>{
@@ -22,6 +23,12 @@ const likeSong=()=>{
     setIsLiked(!previsLiked);
   })
 }
+const [isPlayed,setIsPlayed]=useState(false);
+const changeIcon=()=>{
+  setIsPlayed(previsPlayed=>{
+    setIsPlayed(!previsPlayed);
+  })
+}
     return(
       <div className='player-button'>
         <button className='shuffle-button' onClick={changeShuffleColor}>
@@ -30,8 +37,8 @@ const likeSong=()=>{
         <button className='prev-button'>
           <FontAwesomeIcon icon={faBackwardStep}/>
         </button>
-        <button className='play-button' >
-          <FontAwesomeIcon icon={faPlay}/>
+        <button className='play-button' onClick={changeIcon}>
+          <FontAwesomeIcon icon={isPlayed ? faPause : faPlay}/>
         </button>
         <button className='next-button'>
           <FontAwesomeIcon icon={faForwardStep}/>
@@ -42,6 +49,18 @@ const likeSong=()=>{
         <button className='like-song' onClick={likeSong}>
           <FontAwesomeIcon className={`like-icon ${isLiked ? 'liked' : ' '}`} icon={faHeart}/>
         </button>
+        <div className='song-info'>
+        <div className='image-container'>
+
+        </div>
+          <h4 className='song-name'>
+            Ik Kahani
+          </h4>
+          &nbsp;
+          <h5 className='artist-name'>
+            Gajendra Verma
+          </h5>
+        </div>
       </div>
 )
 }
